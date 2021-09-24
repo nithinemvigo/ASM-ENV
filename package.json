@@ -1,0 +1,34 @@
+{
+  "name": "asm-env",
+  "version": "1.0.0",
+  "description": "Package for load enviroment variables from .env.json file or AWS Secret manager",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "ts-node ./src/index.test.ts",
+    "start": "ts-node ./src/index.ts",
+    "t": "ts-node ./_test/_test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nithinemvigo/ASM-ENV.git"
+  },
+  "keywords": [
+    "aws",
+    "secret",
+    "manager",
+    "asm",
+    "dotenv",
+    "dotenvjson",
+    "environment"
+  ],
+  "author": "Nithin Krishnan Pattani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nithinemvigo/ASM-ENV/issues"
+  },
+  "homepage": "https://github.com/nithinemvigo/ASM-ENV#readme",
+  "devDependencies": {
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
