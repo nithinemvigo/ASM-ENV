@@ -6,9 +6,11 @@
     "rootDir": "./src",                             
     "strict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,                       
+    "esModuleInterop": true,   
+    "declaration": true                    
   },
   "exclude":[
-    "./node_modules"
+    "./node_modules",
+    "./src/index.test.ts",
   ]
 }
