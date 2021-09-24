@@ -1,12 +1,16 @@
 {
   "name": "asm-env",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Package for load enviroment variables from .env.json file or AWS Secret manager",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+   "types": "dist/index.d.ts",
   "scripts": {
     "test": "ts-node ./src/index.test.ts",
     "start": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
